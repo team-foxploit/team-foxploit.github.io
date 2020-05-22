@@ -8,7 +8,7 @@ const About = (props) => {
               <div className="container">
                 <div className="row align-items-center justify-content-between">
                   <div className="col-12 col-lg-6 mb-6 mb-lg-0">
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/about/03.png`} alt="Image" className="img-fluid" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/about/03.png`} alt="about-03" className="img-fluid" />
                   </div>
                   <div className="col-12 col-lg-6 col-xl-5">
                     <div> <span className="badge badge-primary-soft p-2">

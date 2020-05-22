@@ -7,6 +7,9 @@ import Feature from './components/Feature';
 import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
+import Testimonial from './components/Testimonial';
+import Blog from './components/Blog';
+import Footer from './components/Footer';
 // App CSS
 import './App.css';
 
@@ -15,10 +18,15 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <Feature />
-      <About />
-      <Services />
-      <Work />
+      <div className="page-content">
+          <Feature />
+          <About />
+          <Services />
+          <Work />
+          <Testimonial />
+          <Blog />
+      </div>
+      <Footer />
     </div>
   );
 }
