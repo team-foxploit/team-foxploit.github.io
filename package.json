@@ -2,7 +2,7 @@
   "name": "foxploit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://team-foxploit.github.io",
+  "homepage": "https://team-foxploit.github.io/index.html",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
