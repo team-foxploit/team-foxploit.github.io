@@ -7,11 +7,11 @@ const Hero = (props) => {
             <section>
               <div className="container">
                 <div className="row align-items-center">
-                  <div className="col-12 col-lg-5 col-lg-6 order-lg-2 mb-8 mb-lg-0">
+                  <div className="col-12 col-lg-4 col-lg-6 order-lg-2 mb-8 mb-lg-0">
                     {/*<!-- Image -->*/}
                     <img src={`${process.env.PUBLIC_URL}/assets/images/hero/01.png`} className="img-fluid" alt="..."/>
                   </div>
-                  <div className="col-12 col-lg-7 col-xl-6 order-lg-1">
+                  <div className="col-12 col-lg-6 col-xl-6 order-lg-1">
                     {/*<!-- Heading -->*/}
                     <h5 className="badge badge-primary-soft font-w-6">Ever Created For</h5>
                     <h1 className="display-4">
