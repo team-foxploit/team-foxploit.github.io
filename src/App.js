@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+// import logo from './logo.svg';
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Products from './pages/Products';
+import Services from './pages/Services';
 // Components
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Feature from './components/Feature';
-import About from './components/About';
-import Services from './components/Services';
-import Work from './components/Work';
-import Testimonial from './components/Testimonial';
-import Blog from './components/Blog';
 import Footer from './components/Footer';
 // App CSS
 import './App.css';
@@ -16,17 +20,27 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <div className="page-content">
-          <Feature />
-          <About />
-          <Services />
-          <Work />
-          <Testimonial />
-          <Blog />
-      </div>
-      <Footer />
+      <Router>
+          <Header />
+          <Switch>
+              <Route path="/" exact={true}>
+                  <Home />
+              </Route>
+              <Route path="/about">
+                  <About />
+              </Route>
+              <Route path="/contact">
+                  <Contact />
+              </Route>
+              <Route path="/products">
+                  <Products />
+              </Route>
+              <Route path="/services">
+                  <Services />
+              </Route>
+          </Switch>
+          <Footer />
+      </Router>
     </div>
   );
 }
