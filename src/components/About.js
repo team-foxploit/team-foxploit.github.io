@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = (props) => {
     return (
@@ -58,9 +59,9 @@ const About = (props) => {
                           <p className="mb-0 ml-3">SVG Icon</p>
                         </div>
                       </div>
-                    </div> <a href="#" className="btn btn-outline-primary mt-5">
+                  </div> <Link to="/about" className="btn btn-outline-primary mt-5">
                             Learn More
-                          </a>
+                          </Link>
                   </div>
                 </div>
               </div>

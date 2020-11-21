@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Footer = (props) => {
+
+    const [email, setEmail] = useState('');
+
+    const inputChangeHandler = (e) => {
+        e.preventDefault();
+        setEmail(e.target.value);
+    }
+
     return (
         <>
             {/*<!--footer start-->*/}
@@ -17,7 +25,7 @@ const Footer = (props) => {
                       <h5 className="mb-4 text-white">Newsletter</h5>
                       <h6 className="text-light">Subscribe Our Newsletter</h6>
                       <form id="mc-form" className="group">
-                        <input type="email" value="" name="EMAIL" className="email form-control" id="mc-email" placeholder="Email Address" required="" style={{height: '60px'}} />
+                        <input type="email" value="" name="EMAIL" className="email form-control" id="mc-email" placeholder="Email Address" required="" style={{height: '60px'}} value={email} onChange={inputChangeHandler} />
                         <input className="btn btn-outline-light btn-block mt-3 mb-2" type="submit" name="subscribe" value="Subscribe" />
                       </form> <small className="text-light">Get started for 1 Month free trial No Purchace required.</small>
                     </div>
