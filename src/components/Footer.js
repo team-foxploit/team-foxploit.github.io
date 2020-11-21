@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
 
@@ -12,7 +13,7 @@ const Footer = (props) => {
     return (
         <>
             {/*<!--footer start-->*/}
-            <footer className="py-11 bg-primary position-relative" data-bg-img={`${process.env.PUBLIC_URL}/assets/images/bg/03.png`}>
+            <footer className="pt-11 pb-5 bg-primary position-relative" data-bg-img={`${process.env.PUBLIC_URL}/assets/images/bg/03.png`}>
               <div className="shape-1" style={{height: '150px', overflow: 'hidden'}}>
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: '100%', width: '100%'}}>
                   <path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style={{stroke: 'none', fill: '#fff'}}></path>
@@ -27,7 +28,8 @@ const Footer = (props) => {
                       <form id="mc-form" className="group">
                         <input type="email" value="" name="EMAIL" className="email form-control" id="mc-email" placeholder="Email Address" required="" style={{height: '60px'}} value={email} onChange={inputChangeHandler} />
                         <input className="btn btn-outline-light btn-block mt-3 mb-2" type="submit" name="subscribe" value="Subscribe" />
-                      </form> <small className="text-light">Get started for 1 Month free trial No Purchace required.</small>
+                      </form>
+                      {/*<small className="text-light">Get started for 1 Month free trial No Purchace required.</small>*/}
                     </div>
                   </div>
                   <div className="col-12 col-lg-6 col-xl-7">
@@ -74,9 +76,9 @@ const Footer = (props) => {
                     </div>
                     <div className="row mt-5">
                       <div className="col-12 col-sm-6">
-                        <a className="footer-logo text-white h2 mb-0" href="index.html">
-                          Boots<span className="font-weight-bold">Land.</span>
-                        </a>
+                        <Link className="footer-logo text-white h2 mb-0" to="/">
+                          Fox<span className="font-weight-bold">ploit.</span>
+                        </Link>
                       </div>
                       <div className="col-12 col-sm-6 mt-6 mt-sm-0">
                         <ul className="list-inline mb-0">
@@ -95,9 +97,9 @@ const Footer = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="row text-white text-center mt-8">
+                <div className="row text-white text-center mt-5">
                   <div className="col">
-                    <hr className="mb-8" />Copyright 2019 Bootsland Theme by <u><a className="text-white" href="#">ThemeHt</a></u> | All Rights Reserved</div>
+                    <hr className="mb-8" />Copyright &copy; 2020 <u><Link className="text-white" to="/">Foxploit</Link></u> | All Rights Reserved</div>
                 </div>
               </div>
             </footer>

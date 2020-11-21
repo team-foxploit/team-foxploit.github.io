@@ -15,7 +15,7 @@ const Hero = (props) => {
                     {/*<!-- Heading -->*/}
                     <h5 className="badge badge-primary-soft font-w-6">Ever Created For</h5>
                     <h1 className="display-4">
-                          Let's Work With <span className="text-primary">Bootsland</span>
+                          Let's Work With <span className="text-primary">Foxploit</span>
                         </h1>
                     {/*<!-- Text -->*/}
                     <p className="lead text-muted">Build a Beautiful, Clean & Modern Design website with flexible Bootstrap components.</p>
